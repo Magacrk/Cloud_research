@@ -1,0 +1,16 @@
+//commands
+
+Split
+python3 split_model.py --k 30
+
+Package & upload
+./package_models.sh
+
+Deploy
+python3 deploy_sagemaker.py
+
+Edge→Cloud inference & metrics
+python3 collect_metrics.py
+
+Plot
+python3 plot_results.py
